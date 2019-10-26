@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>803</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="MplWidget" name="MplWidget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>803</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionDesconectar"/>
+   </widget>
+   <widget class="QMenu" name="menuSubplot">
+    <property name="title">
+     <string>Subplot</string>
+    </property>
+    <addaction name="actionAtivar"/>
+    <addaction name="separator"/>
+    <addaction name="actionPlot_2"/>
+    <addaction name="actionPlot_3"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSubplot"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGrafico1_SG">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gráfico 1 (padrão)</string>
+   </property>
+  </action>
+  <action name="actionGrafico2_SG">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gráfico 2</string>
+   </property>
+  </action>
+  <action name="actionGrafico3_SG">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gráfico 3</string>
+   </property>
+  </action>
+  <action name="actionGrafico1_T">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gráfico 1 (padrão)</string>
+   </property>
+  </action>
+  <action name="actionGrafico2_T">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gráfico 2</string>
+   </property>
+  </action>
+  <action name="actionGrafico3_T">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gráfico 3</string>
+   </property>
+  </action>
+  <action name="actionGrafico1_A">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gráfico 1</string>
+   </property>
+  </action>
+  <action name="actionGrafico2_A">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gráfico 2 (padrão)</string>
+   </property>
+  </action>
+  <action name="actionGrafico3_A">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gráfico 3</string>
+   </property>
+  </action>
+  <action name="actionAtivar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Ativar</string>
+   </property>
+  </action>
+  <action name="actionDesativar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Desativar</string>
+   </property>
+  </action>
+  <action name="actionDescartar_SG">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Descartar</string>
+   </property>
+  </action>
+  <action name="actionDescartar_T">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Descartar</string>
+   </property>
+  </action>
+  <action name="actionDescartar_A">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Descartar</string>
+   </property>
+  </action>
+  <action name="actionX_AXIS">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>X_AXIS</string>
+   </property>
+  </action>
+  <action name="actionY_AXIS">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Y_AXIS</string>
+   </property>
+  </action>
+  <action name="actionZ_AXIS">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Z_AXIS</string>
+   </property>
+  </action>
+  <action name="actionPLOT2">
+   <property name="text">
+    <string>PLOT2</string>
+   </property>
+  </action>
+  <action name="actionPLOT3">
+   <property name="text">
+    <string>PLOT3</string>
+   </property>
+  </action>
+  <action name="actionplot_2">
+   <property name="text">
+    <string>plot_2</string>
+   </property>
+  </action>
+  <action name="actionplot_3">
+   <property name="text">
+    <string>plot_3</string>
+   </property>
+  </action>
+  <action name="actionPlot_2">
+   <property name="text">
+    <string>Plot_2</string>
+   </property>
+  </action>
+  <action name="actionPlot_3">
+   <property name="text">
+    <string>Plot_3</string>
+   </property>
+  </action>
+  <action name="actionDesconectar">
+   <property name="text">
+    <string>Desconectar</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QWidget</extends>
+   <header>mplwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
